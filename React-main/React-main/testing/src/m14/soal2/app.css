@@ -1,0 +1,182 @@
+/* Container untuk daftar produk */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+/* Desain umum untuk kartu produk */
+.product {
+    border: 1px solid #f2f2f2;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover efek pada produk */
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Gambar produk dengan border-radius */
+.product img {
+    width: 100%;
+    border-radius: 12px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* Bagian teks deskripsi produk */
+.product .product-text {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #333;
+}
+
+.product .product-text h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.product .product-text p {
+    font-size: 0.875rem;
+    color: #6b7280;
+    height: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+/* Tombol counter */
+.product .counter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Tombol tambah dan kurang */
+.product .counter-button button {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+/* Tombol tambah */
+.product .counter-button button.tambah {
+    background-color: #42b72a;
+    color: white;
+}
+
+/* Tombol kurang */
+.product .counter-button button.kurang {
+    background-color: #d9534f;
+    color: white;
+}
+
+/* Efek hover pada tombol */
+.product .counter-button button:hover {
+    transform: scale(1.05);
+}
+
+/* Styling untuk harga total */
+.product .total-price {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #28a745;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Desain untuk halaman summary */
+.summary {
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: fit-content;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+/* Desain untuk detail produk */
+.product-detail {
+    border: 1px solid #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Desain wrapper gambar dan info produk */
+.product-detail-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+/* Tombol Back */
+.back-button {
+    background-color: #42b72a;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Hover efek tombol Back */
+.back-button:hover {
+    background-color: #34a42e;
+    transform: scale(1.05);
+}
+
+/* Styling untuk gambar di detail produk */
+.product-image {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* Styling untuk gambar produk di halaman detail */
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Efek gambar ketika hover */
+.product-image:hover {
+    transform: scale(1.05);
+}

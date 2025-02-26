@@ -1,0 +1,56 @@
+.book-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Kartu sejajar ke kiri */
+    margin: 20px 10px; /* Margin lebih kecil */
+    gap: 15px; /* Jarak antar kartu diperpendek */
+    padding: 0 20px; /* Padding untuk memberi ruang dari sisi layar */
+  }
+  
+  .book-card {
+    border: 1px solid #ddd; /* Border yang lebih halus */
+    border-radius: 8px; /* Radius yang lebih kecil */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Bayangan yang lebih lembut */
+    width: 220px; /* Ukuran kartu lebih ramping */
+    height: auto;
+    padding: 10px; /* Padding dalam kartu */
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: left; /* Menyesuaikan dengan tampilan e-commerce */
+    transition: all 0.2s ease;
+  }
+  
+  .book-card:hover {
+    transform: scale(1.05); /* Efek zoom lebih lembut */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Bayangan lebih tegas saat hover */
+    cursor: pointer;
+  }
+  
+  .book-card img {
+    width: 100%; /* Gambar memenuhi kartu */
+    height: 200px; /* Tinggi gambar seragam */
+    object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+    object-position: center;
+    border-radius: 8px 8px 0 0; /* Menyelaraskan dengan border kartu */
+    background-color: #f9f9f9; /* Warna latar belakang abu terang */
+  }
+  
+  .book-card-info {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+  
+  .book-card-info p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .book-card-desc {
+    margin: 10px 0;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

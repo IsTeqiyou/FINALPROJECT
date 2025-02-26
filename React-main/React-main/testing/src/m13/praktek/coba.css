@@ -1,0 +1,16 @@
+/* Animasi untuk modal masuk */
+@keyframes modal-in {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Terapkan animasi modal */
+  .animate-modal-in {
+    animation: modal-in 0.3s forwards;
+  }
